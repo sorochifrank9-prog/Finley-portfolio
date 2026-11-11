@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finley Data Hub - Cheap Data</title>
+<link rel="stylesheet" href="data.css">
+</head>
+<body>
+<header>
+  <div class="logo">FINLEY <span>DATA HUB</span></div>
+  <p>Cheap & Fast Data • All Networks • 24/7</p>
+  <a class="top-btn" href="https://wa.me/2349038001642?text=Hello%20Finley%20Data%20Hub%2C%20I%20want%20to%20buy%20data" target="_blank">Chat on WhatsApp</a>
+</header>
+
+<div class="tabs">
+  <button class="tab active" onclick="show('MTN',this)">MTN</button>
+  <button class="tab" onclick="show('AIRTEL',this)">AIRTEL</button>
+  <button class="tab" onclick="show('GLO',this)">GLO</button>
+  <button class="tab" onclick="show('9MOBILE',this)">9MOBILE</button>
+</div>
+
+<section class="card">
+  <h2 id="netTitle">📱 MTN SME Data</h2>
+  <div id="plans"></div>
+</section>
+
+<section class="card">
+  <h2>🛒 Buy Data</h2>
+  <input id="buyerNum" type="tel" placeholder="Phone number to receive data e.g. 0903...">
+  <input id="planPicked" type="text" placeholder="Pick a plan above first" readonly>
+  <button class="big-btn" onclick="buyData()">Buy on WhatsApp ✅</button>
+  <p class="small">How e dey work: 1. Pick plan 2. Put number 3. Chat me on WhatsApp 4. Pay 5. I send your data sharp sharp.<br>WhatsApp: 09038001642 • Finley Data Hub</p>
+</section>
+
+<footer><p>Finley Data Hub © 2026</p><a href="index.html">← Back to Portfolio</a></footer>
+<script src="data.js"></script>
+</body>
+</html>

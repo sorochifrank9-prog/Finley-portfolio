@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Finley - portfolio</title>
+        <meta name="viewport"
+        content="width=device=width, initial-scale=1.0">
+        <style>
+            /* page back ground and font */
+            body {font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background: #f8f9ff; color: #111;
+            }
+
+            nav {
+                background: #111827;
+                color: white;
+                padding: 15px 20px;
+                display: flex;
+                justify-content: space-between ;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin-left: 15px;
+                font-size: 14px;
+            }
+
+            /* hero - first big section*/
+            
+            .hero {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 30px 20px;
+                background: white;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+                margin: 0;
+            }
+
+            .hero h2 {
+                color: #4f46e5;
+                font-size: 16px;
+            }
+
+            .btn {
+                background: #4f46e5;
+                padding: 10px 18px;
+                color: white;
+                border-radius: 20px;text-decoration: none;
+            }
+
+            .btn2 {
+                border: 2px solid #4f46e5;
+                color: #4f46e5;
+                padding: 8px 16px;
+                border-radius: 20px;
+                text-decoration: none;
+                margin-left: 10px;
+            }
+
+            .photo {
+                width: 120px; 
+                height: 120px;
+                background: #fde68a;
+                border-radius: 50%;
+                border: 3px solid #4f46e5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                overflow: hidden;
+            }   
+
+            .photo img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            /* sections */
+            .section {
+                padding: 20px;
+            }
+
+            .skills span {
+              background: #ffedd5;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin-right: 8px;
+            }
+
+            /* projects - 3 cards */
+
+            .projects {display: flex;
+            gap: 12px;
+            }
+
+            .card {
+                background: white;
+                border: 1px solid #ddd;
+                border-radius: 12px;
+                padding: 15px;
+                flex: 1;
+                text-align: center;
+            }
+
+            .card-img {
+                background: #e0e7ff;
+                padding: 20px;
+                border-radius: 10px;
+                color: #4f46e5; 
+            }
+
+            /* contact */
+            .contact {
+                background: #eef2ff;
+                padding: 25px; 
+                text-align: center;
+                border-radius: 15px;
+                margin: 20px;
+            }
+
+            footer {
+                text-align: center;
+                color: #888;
+                padding: 15px;
+            }
+
+            /* make it responsive for phone */
+            @media (max-width: 768px) {
+                .hero, header, nav {
+                    flex-direction: column !important;
+                    text-align: center !important;
+                }
+                .prjects, .project-grid {
+                    grid-template-columns: 1fr !important;
+                    flex-direction: column !important;
+                }
+                img {
+                    max-width: 100% !important;
+                    height: auto !important;
+                }
+                body {
+                    padding: 10px !important;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- Top Bar -->
+        <nav>
+            <b>FINLEY</b>
+            <div><a  href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a> 
+                </div>
+        </nav>
+
+        <!-- HERO -->
+         <div class="hero">
+            <div>
+                <h1> Hi, i'm Finley</h1>
+                <h2> Computer science student in Abia State</h2>
+                <p> I build websites and I play piano</p> <br>
+                <a class="btn" href="#projects">
+                    View Projects</a>
+                <a class="btn2" href="#contact">Contact Me</a>
+            </div>
+            <div class="photo">
+                <img src="IMG_3031.JPG" alt="Finley"></div>
+         </div>
+       
+         <!-- about -->
+          <div class="section" id="about">
+            <h2> About Me </h2>
+            <p>I am a Computer Science Student from Abia State Nigeria. &#127475;&#127468;</p>
+            <p>I am learning web development with HTML and CSS.</p>
+            <p> I love piano &#127929;, football &#9917; and Korean dramas.</p>
+          </div>
+
+          <!-- skills -->
+           <div class="section" id="skills">
+            <h2> My Skills</h2>
+            <div class="skills">
+                <span>HTML</span><span>CSS</span><span>PIANO</span>
+                <span>CODING</span>
+            </div>
+           </div>
+
+           <!-- PROJECTS -->
+            <div class="section" id="projects">
+                <h2>My Projects</h2>
+                <div class="projects">
+                    <div class="card">
+                    <img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?
+                    auto=format&fit=crop&w=800&=80" alt="caculator app" style="width: 100%; height: 150px; object-fit: cover;
+                    border-radius: 10px;">
+                    <h3>Caculator App</h3><a href="calculator.html" class="btn">View Project</a>   
+                    </div>
+
+                    <div class="card">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&
+                    auto=format&fit=crop&q=80" alt="MTN data plans"
+                    style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
+                    <h3> MTN Data Plans</h3><a href="data.html" class="btn">View Project</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600" alt="barber shop"
+                    style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
+                        <h3>Barber Shop</h3><a href="barber.html" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+             <div class="section" id="contact">
+                <h2> CONTACT ME !!!</h2>
+                <P> Want to work with me? send me a message.</P>
+                <p><b> Email: sorochifrank9@gmail.com</b></p>
+                <a href="https://wa.me/2349038001642?
+                text=Hi%20Finley!
+                %20I%20saw%20your%20portfolio"
+                target="_blank" style="display: inline-block; background: #25D366;
+                color: white; padding: 14px 25px; border-radius: 50px; 
+                text-decoration: none; font-weight: bold; margin-top: 15px;"> Chat me on Whatsapp</a>
+                </div>
+             <footer>Made by Finley - Built with HTML & CSS | 2026 </footer>
+             <a href="https://wa.me/2349038001642"
+             target="_blank" style="position: fixed; bottom: 20px; right: 20px;
+             background: #25D366; color: white; width: 60px;
+             height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+              font-size: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000;">&#128172;</a>
+    </body>
+</html>

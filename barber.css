@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif
+}
+
+body{
+    background:#fff;color:#111
+}
+
+header{
+    background:#111;
+    color:#fff;
+    padding:20px;
+    text-align:center
+}
+
+.logo{
+    font-size:28px;
+    font-weight:900;
+    letter-spacing:1px
+}
+
+.logo span{
+    color:#f5c518
+}
+header p{
+    color:#ccc;
+    margin:8px 0 14px
+}
+
+.top-btn,.btn,.big-btn{
+    background:#f5c518;
+    color:#111;
+    padding:12px 20px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:700;
+    border:none;
+    display:inline-block
+}
+
+.btn.outline{
+    background:#fff;
+    border:2px solid #111;
+    margin-left:10px
+}
+
+.hero{
+    padding:40px 20px;
+    text-align:center;
+    background:#f8f8f8
+}
+
+.hero h1{
+    font-size:38px;
+    line-height:1.1
+}
+
+.hero p{
+    margin:14px 0 20px;color:#555
+}
+.card{
+    background:#fff;
+    margin:20px;
+    padding:20px;
+    border-radius:16px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08)
+}
+
+.card h2{
+    margin-bottom:15px
+}
+.price-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+    gap:10px
+}
+.price-row button{
+    background:#111;
+    color:#fff;
+    border:none;
+    padding:8px 14px;
+    border-radius:20px
+}
+.card input,.card select{
+    width:100%;
+    padding:13px;
+    margin-bottom:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px
+}
+
+.big-btn{
+    width:100%;
+    padding:15px;
+    font-size:17px
+}
+.small{
+    margin-top:12px;
+    color:#666;
+    font-size:13px;
+    text-align:center
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#888
+}
+footer a{
+    color:#111
+}
