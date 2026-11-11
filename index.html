@@ -92,12 +92,14 @@
             padding: 8px 15px;
             border-radius: 20px;
             margin-right: 8px;
+            white-space: nowrap;    
             }
 
             /* projects - 3 cards */
 
             .projects {display: flex;
-            gap: 12px;
+            gap: 12px; flex-wrap: wrap;
+                       
             }
 
             .card {
@@ -116,6 +118,17 @@
                 color: #4f46e5; 
             }
 
+            @media (max-width: 600px) {
+                .project {
+                    flex-direction: column; 
+                }
+                .card {
+                    flex: none;
+                    width: 100%;
+                    box-sizing: border-box; 
+                } 
+            }
+                    
             /* contact */
             .contact {
                 background: #eef2ff;
