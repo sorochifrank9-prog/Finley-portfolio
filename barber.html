@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>360 Flex Global - Barbing Shop Aba</title>
+<link rel="stylesheet" href="barber.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">360 <span>FLEX</span> GLOBAL</div>
+  <p>Barbing Shop • Aba, Abia State</p>
+  <a class="top-btn" href="https://wa.me/2349161971275?text=Hello%20360%20Flex%20Global%2C%20I%20want%20to%20book%20a%20cut" target="_blank">Book on WhatsApp</a>
+</header>
+
+<section class="hero">
+  <h1>Look Sharp.<br>Feel Fresh.</h1>
+  <p>Best cuts in Aba. Clean fade, sharp lines, fresh vibes every time.</p>
+  <a href="#price" class="btn">See Prices</a>
+  <a href="#book" class="btn outline">Book Now</a>
+</section>
+
+<section id="price" class="card">
+  <h2>💈 Our Prices</h2>
+  <div class="price-row"><span>Normal Cut</span><b>₦1,500</b><button onclick="book('Normal Cut - N1500')">Book</button></div>
+  <div class="price-row"><span>Fade / Skin Fade</span><b>₦1,500</b><button onclick="book('Fade / Skin Fade - N1500')">Book</button></div>
+  <div class="price-row"><span>Dreadlocks / Retouch</span><b>₦7,000</b><button onclick="book('Dreadlocks / Retouch - N7000')">Book</button></div>
+  <div class="price-row"><span>Beard Trim / Shaping</span><b>₦1,000</b><button onclick="book('Beard Trim - N1000')">Book</button></div>
+  <div class="price-row"><span>Kids Cut</span><b>₦700</b><button onclick="book('Kids Cut - N700')">Book</button></div>
+  <div class="price-row"><span>Hair Dye / Colour</span><b>₦10,000</b><button onclick="book('Hair Dye / Colour - N10000')">Book</button></div>
+</section>
+
+<section id="book" class="card">
+  <h2>📅 Book Your Cut</h2>
+  <input id="name" type="text" placeholder="Your Name">
+  <select id="style">
+    <option>Normal Cut - ₦1,500</option>
+    <option>Fade / Skin Fade - ₦1,500</option>
+    <option>Dreadlocks / Retouch - ₦7,000</option>
+    <option>Beard Trim - ₦1,000</option>
+    <option>Kids Cut - ₦700</option>
+    <option>Hair Dye / Colour - ₦10,000</option>
+  </select>
+  <input id="date" type="date">
+  <input id="time" type="time">
+  <button class="big-btn" onclick="sendBooking()">Book on WhatsApp ✅</button>
+  <p class="small">Owner: Samuel Ndukwe Chukwuebuka • Aba, Abia State • Open: 8am - 9pm Daily</p>
+</section>
+
+<footer>
+  <p>360 Flex Global © 2026 • Aba, Abia State</p>
+  <a href="index.html">← Back to Portfolio</a>
+</footer>
+
+<script src="barber.js"></script>
+</body>
+</html>
